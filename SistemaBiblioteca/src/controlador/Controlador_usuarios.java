@@ -31,7 +31,7 @@ public class Controlador_usuarios extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// Muestrar todos los libros, permitir busqueda de un libro en funcion de su codigo
+		// Muestrar todos los usuaro, permitir busqueda de un usuario en funcion de su codigo
 		ConexionDB bd = new ConexionDB();
 		response.setHeader("Cache-Control", "no-cache");
 	    response.setHeader("Pragma", "no-cache");

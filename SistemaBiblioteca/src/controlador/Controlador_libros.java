@@ -32,7 +32,7 @@ public class Controlador_libros extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		    // Muestrar todos los libros, permitir busqueda de un libro en funcion de su codigo
 			ConexionDB bd = new ConexionDB();
 			//cabecera de la rpta que el servidor da
 			response.setHeader("Cache-Control", "no-cache");
