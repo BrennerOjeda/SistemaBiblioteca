@@ -31,7 +31,7 @@ public class Controlador_registro extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		// Registro de un nuevo usuario
 		ConexionDB bd = new ConexionDB();
 		response.setHeader("Cache-Control", "no-cache");
 	    response.setHeader("Pragma", "no-cache");
