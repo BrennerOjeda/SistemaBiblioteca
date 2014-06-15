@@ -40,6 +40,7 @@ public class Controlador_login extends HttpServlet {
 		bd.conectar();
 		int flag = bd.verificarUsuario(DNI, password);
 		bd.cerrarConexion();
+		// Preguntar si el logeo fue exitoso
 		if (flag != -1){
 			response.sendRedirect("http://localhost:8080/SistemaBiblioteca/prestar_libro.jsp");
 		}
