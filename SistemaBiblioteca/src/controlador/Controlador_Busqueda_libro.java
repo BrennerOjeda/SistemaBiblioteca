@@ -30,7 +30,7 @@ public class Controlador_Busqueda_libro extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		// Prestar un libro, busqueda de libro, usario y regristro en BD
 		ConexionDB bd = new ConexionDB();
 		String codigoLibro = request.getParameter("codigoLibro");
 		System.out.println(codigoLibro);
