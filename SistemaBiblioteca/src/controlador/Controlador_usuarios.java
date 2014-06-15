@@ -31,12 +31,11 @@ public class Controlador_usuarios extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		// Muestrar todos los libros, permitir busqueda de un libro en funcion de su codigo
 		ConexionDB bd = new ConexionDB();
 		response.setHeader("Cache-Control", "no-cache");
 	    response.setHeader("Pragma", "no-cache");
-	    //String cityType = request.getParameter("cityType");
-	    //List<City> cities = findCities(cityType);
+
 	    bd.conectar();
 	    List<List<String>> lista_usuarios =bd.listarUsuarios();
 	    System.out.println(lista_usuarios.size());
