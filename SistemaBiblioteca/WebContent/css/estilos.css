@@ -1,0 +1,105 @@
+body{
+    font: 15px  'Trebuchet MS', Helvetica, sans-serif;
+    background: #0ca3d2;
+    font-style:oblique;
+}
+
+/*encabezado*/     
+header{
+    color:white;
+    margin:5px auto;
+    text-align:center;
+}
+
+
+/*menu*/
+
+
+nav ul{
+    display:block;
+    width:900px;
+    height:60px;
+    list-style:none;
+    margin:0px auto;
+    text-align:center;
+ 
+}
+nav li{
+    float:left;
+}
+
+nav li a{
+    text-decoration:none;
+    color:white;
+    font-style:oblique;
+    padding:15px 0px;
+    display:block;
+    background:url(imagenes/backbtn.png) no-repeat center;
+    width:120px;
+    margin: 0px 10px;
+    text-align:center;
+}
+
+nav li a:hover{
+    color: #0ca3d2;
+    background:url(imagenes/backbtnhover.png) no-repeat center;
+}
+nav li ul{
+    display:none;
+    position:absolute;
+    width:160px;
+    padding: 10px;
+}
+
+nav li:hover ul{
+    display:block; 
+}
+nav li li a{
+    background:url(imagenes/backbtnlarge.png) no-repeat center;
+    width:160px;
+    padding:15px 0px;
+}
+nav li a:hover{
+    background:url(imagenes/backbtnhoverlarge.png) no-repeat center;
+}
+   
+
+/*contenedor*/
+#contenedor{
+    background:white;
+    margin:20px auto;
+    width:970px;
+    border-radius:15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+#contenedor1{
+    background:white;
+    margin:20px auto;
+    width:970px;
+    border-radius:15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+
+/*barra lateral*/
+aside{
+    float:right;
+    width:180px;
+}
+
+/*seccion con el contenido*/
+section{
+    width:770px;
+    padding:5px 10px;
+}
+
+
+/*pie de pagina*/
+footer{
+    margin:0 auto;
+    text-align:center;
+    color:white;
+}
