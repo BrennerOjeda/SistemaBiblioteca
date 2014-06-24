@@ -31,7 +31,12 @@
                     </ul>
 				</li>
                 <!-- <li><a href="#">Circulación</a></li>  -->
-                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Ayuda en Linea</a>
+              	  <ul>
+                        <li><a href="http://localhost:8080/SistemaBiblioteca/pagina_chat.jsp">Todos Los usuarios</a></li>
+                        <!-- <li><a href="#">Pendite devolucion</a></li> -->
+                    </ul>
+                </li>
                 
             </ul>
         </nav>
