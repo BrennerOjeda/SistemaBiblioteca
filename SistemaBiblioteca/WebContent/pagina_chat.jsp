@@ -28,30 +28,37 @@
 </head>
 <body>
  <jsp:include page="header.jsp" flush="true" />
-<br/><br/><br/>
-<hr/>
-<div class="container container-body">
-    <div class="leftPanel">
-        <div class="userInfo">
-            <span class="disconnected" id="status">Desconectado</span>
-            Nombre: <input type="text" id="userName"/><span class="onLineUserName"></span>
-        </div>
-        <div>
-        	<br></br>
-            <button id="connect" class="btn btn-primary" onclick="wsclient.connect(document.getElementById('userName').value);">Conectar</button>
-            <button id="disconnect" class="btn btn-primary" disabled="disabled" onclick="wsclient.disconnect();">Desconectar</button>
-        </div>
-        <div id="onLineUsersPanel">
-            <h3>Usuarios conectados:</h3>
-            <ul id="onlineUsers">
-            </ul>
-        </div>
-    </div>
 
-    <div id="conversations">
-        <ul>
-        </ul>
-    </div>
+<div class="container container-body">
+	<fieldset>
+	    <legend>Atención online</legend>
+		    
+			    <div class="leftPanel">
+			        <div class="userInfo">
+			            <span class="disconnected" id="status">Desconectado</span>
+			            Usuario: <input type="text" id="userName"/><span class="onLineUserName"></span>
+			        </div>
+			        
+			        <div>
+			        	<br></br>
+			            <button id="connect" class="btn btn-primary" onclick="wsclient.connect(document.getElementById('userName').value);">Conectar</button>
+			            <button id="disconnect" class="btn btn-primary" disabled="disabled" onclick="wsclient.disconnect();">Desconectar</button> 
+			        </div>
+			        
+			        <div id="onLineUsersPanel">
+			            <h4>Usuarios conectados:</h4>
+			            <ul id="onlineUsers">
+			            </ul>
+			        </div>
+			    </div>
+	
+		
+			    <div id="conversations">
+			        <ul>
+			        </ul>
+			    </div>
+				    
+    	</fieldset>
 </div>
 <script type="text/javascript">
     $(function(){

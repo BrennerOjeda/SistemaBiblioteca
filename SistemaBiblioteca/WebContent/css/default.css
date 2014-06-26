@@ -9,16 +9,16 @@ div#onLineUsersPanel {
 }
 
 span.disconnected {
-    background: url('/PWsubastas/resources/img/disconnected.png') no-repeat left;
+    background: url('/SistemaBiblioteca/WebContent/imgenes/disconnected.png') no-repeat left;
 }
 
 span.connected {
-    background: url('/PWsubastas/resources/img/connected.png') no-repeat left;
+    background: url('/SistemaBiblioteca/WebContent/imgenes/disconnected.png') no-repeat left;
 }
 
 div#conversations {
-    width: 500px;
-    height: 530px;
+    width: 900x;
+    height: 400px;
     font: 1.1em comic sans ms, sans-serif;
     visibility: hidden;
     float: right;
@@ -34,9 +34,9 @@ p.messages {
 }
 
 p.messages div.message {
-    padding: 10px;
+    padding: 0px;
     background-color: #F3F3F3;
-    margin: 5px 0;
+    margin: 0px 0;
     border-radius: 5px;
 }
 
@@ -50,7 +50,7 @@ p.messages div.message p {
 }
 
 div.conversation textarea {
-    width: 330px;
+    width: 600px;
     height: 60px;
 }
 
@@ -61,15 +61,15 @@ span.onLineUserName {
 
 ul#onlineUsers {
     padding: 0;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 ul#onlineUsers li a {
     width: 190px;
     cursor: pointer;
     display: block;
-    padding: 3px;
-    background: #ddd;
+    padding: 2px;
+    background: #99FF66;
     color: #444;
     margin: 2px 0;
 }

@@ -151,9 +151,9 @@ var wsclient = (function() {
     function createCloseButton(conversationId) {
         var button = $(document.createElement('button'));
         button.addClass("btn btn-default");
-        button.html('Cerrar');
+        button.html('Desconectar');
         button.click(function () {
-            removeTab(conversationId);
+        	wsclient.disconnect();
         });
         return button;
     }
