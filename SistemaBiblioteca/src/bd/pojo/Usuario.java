@@ -1,4 +1,4 @@
-package db;
+package bd.pojo;
 
 public class Usuario {
 	private String DNI;

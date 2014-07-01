@@ -1,4 +1,4 @@
-package db;
+package bd.pojo;
 
 public class Libro {
 	private String codigoLibro;
