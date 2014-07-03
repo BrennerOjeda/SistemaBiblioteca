@@ -15,7 +15,7 @@ public class UsuarioDAO {
 	
 	public UsuarioDAO(){};
 	
-	 public int verificarUsuario(int user, String pass){
+	 public String verificarUsuario(int user, String pass){
 		 String nomUsuReg = "";
 		 String apeUsuReg = "";
 		 int ideTipUsuReg = -1;
@@ -35,7 +35,7 @@ public class UsuarioDAO {
 			}	
 			
 		}catch (SQLException e) {	
-			System.out.println("Usuario no Registrado!");
+			System.out.println("Este Usuario no esta Registrado!");
 
 		}finally{
 
@@ -43,7 +43,8 @@ public class UsuarioDAO {
         	UtilidadBD.close(statement);
 		}
 		 
-		 return ideTipUsuReg;
+		 //return ideTipUsuReg == -1 ? "fracaso": "exito";}
+		 return "fracaso";
 	 }
 	 
 	 public List<List<String>> listarUsuarios(){		

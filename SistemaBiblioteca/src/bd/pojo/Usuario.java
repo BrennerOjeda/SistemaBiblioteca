@@ -1,5 +1,7 @@
 package bd.pojo;
 
+import bd.dao.UsuarioDAO;
+
 public class Usuario {
 	private String DNI;
     private String nombre;
@@ -8,6 +10,9 @@ public class Usuario {
     private String direccion;
     private String email;
     private String Password;
+    
+    private UsuarioDAO usuarioDao = new UsuarioDAO();
+    
 	public String getDNI() {
 		return DNI;
 	}
@@ -50,4 +55,8 @@ public class Usuario {
 	public void setPassword(String password) {
 		Password = password;
 	}
+	public String verificarUsuario(){
+		return usuarioDao.verificarUsuario(Integer.parseInt(DNI), Password);
+	}
 }
+

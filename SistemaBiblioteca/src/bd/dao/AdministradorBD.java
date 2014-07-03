@@ -28,11 +28,13 @@ public class AdministradorBD {
 				statement = connection.createStatement();
 			} catch (SQLException e1) {
 				// TODO Auto-generated catch block
+				System.out.print("Problemas al crear statement");
 				e1.printStackTrace();
 			}
 			try {
 				statement.executeUpdate(query);
 			} catch (SQLException e) {
+				System.out.print("Problemas al ejecutar el statement");
 				e.printStackTrace();
 			}
 		} finally {
@@ -50,11 +52,13 @@ public class AdministradorBD {
 				statement = connection.createStatement();
 			} catch (SQLException e1) {
 				// TODO Auto-generated catch block
+				System.out.print("Problemas al crear la conexion");
 				e1.printStackTrace();
 			}
 			try {
 				rs = statement.executeQuery(query);
 			} catch (SQLException e) {
+				System.out.print("Problemas al ejecutar un query");
 				e.printStackTrace();
 			}
 		} finally {
