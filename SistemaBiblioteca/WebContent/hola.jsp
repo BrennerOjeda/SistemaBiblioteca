@@ -3,7 +3,7 @@
  <%@ taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
  <f:view>
  <head> 
- <title>Bienvenida</title>
+ <title>Bienvenida de Brenner</title>
  </head>
  <body>
  <h:form>
