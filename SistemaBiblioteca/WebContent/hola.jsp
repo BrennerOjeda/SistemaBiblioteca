@@ -3,7 +3,7 @@
  <%@ taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
  <f:view>
  <head> 
- <title>Una simple aplicacion JavaServer Faces</title>
+ <title>Bienvenida</title>
  </head>
  <body>
  <h:form>
