@@ -9,10 +9,14 @@
 	<script type = "text/javascript" src="./js/control_logeo.js"></script> 
 </head>
 <body>
-	<form action = "echoNumberAction">
-		<input type="text" name="numberMessage"/>
-		<input type="submit" value="Send Message"/>
-	</form>
-	
+	<section class="container">
+		<div class="login">
+			Contraseña:
+			<form action = "echoNumberAction"> 
+				<input type="password" name="numberMessage"/>
+				<input type="submit" value="Enviar"/>
+			</form>
+		</div>
+	</section>
 </body>
 </html>

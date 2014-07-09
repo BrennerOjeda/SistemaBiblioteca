@@ -7,9 +7,9 @@
 	 <package name="za" extends="struts-default"> 
 		 
 		 <action name="echoNumberAction" 
-		 class="com.za.tutorial.struts2.EchoNumberAction" 
+		 class="com.za.struts2.EchoNumberAction" 
 		 method="execute"> 
-		 <result name="succes">/SuccessView.jsp</result>
+		 <result name="succes">/pagina_usuarios.jsp</result>
 		 <result name="failure">/FailureView.jsp</result> 
 		 </action> 
 	 </package> 

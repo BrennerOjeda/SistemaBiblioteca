@@ -1,4 +1,4 @@
-package com.za.tutorial.struts2;
+package com.za.struts2;
 
 public class EchoNumberAction {
 	private String numberMessage;
