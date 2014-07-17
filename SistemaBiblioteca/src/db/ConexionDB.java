@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ConexionDB {
 	private Connection conexion = null; 
-	
+	 
 	public void conectar(){	
 		String db = "sistemabiblioteca";
 		String driver = "org.gjt.mm.mysql.Driver";

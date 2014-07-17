@@ -37,12 +37,11 @@ public class Controlador_libros extends HttpServlet {
 			//cabecera de la rpta que el servidor da
 			response.setHeader("Cache-Control", "no-cache");
 		    response.setHeader("Pragma", "no-cache");
-		    //String cityType = request.getParameter("cityType");
-		    //List<City> cities = findCities(cityType);
+
 		    bd.conectar();
 		    List<List<String>> lista_libros = bd.listarLibros();
 		    bd.cerrarConexion();
-		    //request.setAttribute("cities", cities);
+
 		    request.setAttribute("lista_libros", lista_libros);
 		    //seleccionamos el archivo de la tabla a ser insertada en la vista
 		    String format = request.getParameter("format");

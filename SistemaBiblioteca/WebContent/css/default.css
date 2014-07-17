@@ -1,0 +1,84 @@
+span#status {
+    padding: 0 0 0 20px;
+    display: block;
+}
+
+div#onLineUsersPanel {
+    visibility: hidden;
+    padding: 10px 0;
+}
+
+span.disconnected {
+    background: url('/SistemaBiblioteca/WebContent/imgenes/disconnected.png') no-repeat left;
+}
+
+span.connected {
+    background: url('/SistemaBiblioteca/WebContent/imgenes/disconnected.png') no-repeat left;
+}
+
+div#conversations {
+    width: 900x;
+    height: 400px;
+    font: 1.1em comic sans ms, sans-serif;
+    visibility: hidden;
+    float: right;
+}
+
+div#conversations div.conversation {
+    padding: 10px;
+}
+
+p.messages {
+    height: 350px;
+    overflow-y: auto;
+}
+
+p.messages div.message {
+    padding: 0px;
+    background-color: #F3F3F3;
+    margin: 0px 0;
+    border-radius: 5px;
+}
+
+p.messages div.message span {
+    color: #999;
+}
+
+p.messages div.message p {
+    padding: 3px 0;
+    margin: 0;
+}
+
+div.conversation textarea {
+    width: 600px;
+    height: 60px;
+}
+
+span.onLineUserName {
+    font-weight: bold;
+    visibility: hidden;
+}
+
+ul#onlineUsers {
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul#onlineUsers li a {
+    width: 190px;
+    cursor: pointer;
+    display: block;
+    padding: 2px;
+    background: #99FF66;
+    color: #444;
+    margin: 2px 0;
+}
+
+ul#onlineUsers li a:hover {
+    color: #d27435;
+    background: #bbb;
+}
+
+div.leftPanel {
+    float: left;
+}

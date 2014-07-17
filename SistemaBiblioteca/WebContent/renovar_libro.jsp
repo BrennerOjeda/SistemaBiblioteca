@@ -14,7 +14,7 @@
 		<section>
 				<article>
 					<hgroup>
-						<h3>Reovacion de libro</h3>
+						<h3>Reovación de libro</h3>
 					</hgroup>
 					<p>
 						<form method="GET" action="Controlador">
